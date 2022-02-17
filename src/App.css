@@ -1,0 +1,102 @@
+body{
+  background-color: #090A0E;
+  color: white;
+
+}
+.max-center{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  padding: 15px;
+
+  display: grid;
+  gap: 15px;
+
+  background-color: #0F1014;
+
+  /* will put the images and title in column of 4  */
+  grid-template-columns: 1fr 1fr 1fr 1fr;    
+
+
+}
+
+.movie-cover{
+  width: 100%;
+}
+
+.movie-placeholder{
+  min-height: 478px;
+  background-color: white;
+  color: #0F1014;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.hero{
+  position: relative;
+  min-height: 500px;
+  background-position: top center;
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-content{
+  min-width: 70%;
+  padding-bottom: 60px;
+}
+
+.hero-title{
+  font-size: 72px;
+  margin: 0;
+}
+
+
+.button{
+  background-color: #0F1014;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
+.youtube-container{
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content{
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    
+  }
+}
